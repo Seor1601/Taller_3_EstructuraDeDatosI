@@ -1,16 +1,15 @@
 public class Pedido {
-    private int id;
-    private String nombre;
-    private String email;
+   public int id;
+    public int clienteId;
+    public int productoId;
+    public int cantidad;
+    public String fecha;
 
-    public Usuario(int id, String nombre, String email) {
+    public Pedido(int id, int clienteId, int productoId, int cantidad, String fecha) {
         this.id = id;
-        this.nombre = nombre;
-        this.email = email;
-    }
-
-    @Override
-    public String toString() {
-        return id + "," + nombre + "," + email;
+        this.clienteId = clienteId;
+        this.productoId = productoId;
+        this.cantidad = cantidad;
+        this.fecha = fecha;
     }
 }
